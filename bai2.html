@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function convert(string){
+            let a=string.toLowerCase().split(" ");
+            for(let i = 0; i<a.length; i++){
+                a[i]= a[i][0].toUpperCase() + a[i].slice(1);
+            }
+            return a.join(" ")
+
+        }
+        
+        let result= convert("Hello anh em");
+        console.log(result); 
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //  vẽ hình chữ nhật
+         for(let i=1;i<=7;i++){
+            for( let j =1; j<15;j++){
+                if(i==2 && (j==2 || j==3 || j==4 || j==5 || j==6 || j==7 || j==8 || j==9 || j==10 || j==11 || j==12 || j==13 ||j==14)
+                ||i==3 && (j==2 || j==3 || j==4 || j==5 || j==6 || j==7 || j==8 || j==9 || j==10 || j==11 || j==12 || j==13 ||j==14)
+                ||i==4 && (j==2 || j==3 || j==4 || j==5 || j==6 || j==7 || j==8 || j==9 || j==10 || j==11 || j==12 || j==13 ||j==14)
+                ||i==5 && (j==2 || j==3 || j==4 || j==5 || j==6 || j==7 || j==8 || j==9 || j==10 || j==11 || j==12 || j==13 ||j==14)
+                ||i==6 && (j==2 || j==3 || j==4 || j==5 || j==6 || j==7 || j==8 || j==9 || j==10 || j==11 || j==12 || j==13 ||j==14)
+                
+                ){
+                    document.write(" * ")
+                }else{
+                    document.write("&nbsp&nbsp&nbsp")
+                }
+            }
+            document.write("<br>")
+            //  hình rỗng
+        } 
+
+                for(let i=1; i<=10; i++){
+                    for(let j=1; j<=30; j++){
+                        if(i==1 || i==10 || j==1 || j==30){
+                            document.write("*")
+                        }
+                        else{
+                            document.write("&nbsp&nbsp")
+                        }
+                    }
+                    document.write("<br>")
+                }
+    </script>
+</body>
+</html>
